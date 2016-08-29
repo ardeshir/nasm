@@ -1,0 +1,9 @@
+     1                                  ; tiny.asm
+     2                                  BITS 64 
+     3                                  GLOBAL _start
+     4                                  SECTION .text
+     5                                  _start:
+     6 00000000 B801000000              	mov	eax, 1
+     7 00000005 BB2B000000              	mov	ebx, 43
+     8 0000000A CD80                    	int	0x80
+     9                                  
